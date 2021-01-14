@@ -21,6 +21,7 @@ public:
 	void ProcessWheel(float yoffset);
 
 	glm::mat4 GetViewMatrix();
+	glm::vec3 GetPosition() const { return position; };
 
 private:
 	glm::vec3 position = glm::vec3(0.0f, 0.0f, 3.0f);

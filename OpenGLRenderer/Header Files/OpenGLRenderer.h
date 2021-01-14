@@ -14,7 +14,8 @@
 Camera camera;
 float lastX = 0;
 float lastY = 0;
-
+bool wireFrame = false;
+bool normalView = false;
 
 void framebuffer_size_callback(GLFWwindow* window, int width, int height);
 

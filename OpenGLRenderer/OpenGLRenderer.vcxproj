@@ -161,7 +161,9 @@
     <ClInclude Include="Header Files\stb_image.h" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Shaders\fLightShader.frag" />
     <None Include="Shaders\fShader.frag" />
+    <None Include="Shaders\vLightShader.vert" />
     <None Include="Shaders\vShader.vert" />
   </ItemGroup>
   <ItemGroup>

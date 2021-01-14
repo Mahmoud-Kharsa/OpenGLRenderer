@@ -53,6 +53,12 @@
     <None Include="Shaders\vShader.vert">
       <Filter>Shaders</Filter>
     </None>
+    <None Include="Shaders\vLightShader.vert">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\fLightShader.frag">
+      <Filter>Shaders</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Image Include="Resource Files\wall.jpg">
