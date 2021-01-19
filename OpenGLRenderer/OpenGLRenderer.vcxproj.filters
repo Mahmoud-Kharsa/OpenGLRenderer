@@ -11,7 +11,7 @@
     </Filter>
     <Filter Include="Resource Files">
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
-      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms;gltf;glb;json</Extensions>
     </Filter>
     <Filter Include="Shaders">
       <UniqueIdentifier>{ba6e5fba-9db3-4468-95bc-80d24ecccf74}</UniqueIdentifier>
@@ -45,6 +45,15 @@
     <ClInclude Include="Camera.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Header Files\tiny_gltf.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Header Files\stb_image_write.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Header Files\json.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="Shaders\fShader.frag">
@@ -59,6 +68,328 @@
     <None Include="Shaders\fLightShader.frag">
       <Filter>Shaders</Filter>
     </None>
+    <None Include="Resource Files\sampleModels\2CylinderEngine\glTF-Draco\2CylinderEngine.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resource Files\sampleModels\AlphaBlendModeTest\glTF\AlphaBlendModeTest.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resource Files\sampleModels\AnimatedCube\glTF\AnimatedCube.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resource Files\sampleModels\AnimatedMorphCube\glTF\AnimatedMorphCube.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resource Files\sampleModels\AnimatedMorphCube\glTF-Quantized\AnimatedMorphCube.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resource Files\sampleModels\AnimatedMorphSphere\glTF\AnimatedMorphSphere.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resource Files\sampleModels\AnimatedTriangle\glTF\animation.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resource Files\sampleModels\AnimatedTriangle\glTF\simpleTriangle.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resource Files\sampleModels\AntiqueCamera\glTF\AntiqueCamera.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resource Files\sampleModels\Avocado\glTF\Avocado.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resource Files\sampleModels\Avocado\glTF-Draco\Avocado.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resource Files\sampleModels\Avocado\glTF-pbrSpecularGlossiness\Avocado.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resource Files\sampleModels\Avocado\glTF-Quantized\Avocado.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resource Files\sampleModels\BarramundiFish\glTF\BarramundiFish.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resource Files\sampleModels\BarramundiFish\glTF-Draco\BarramundiFish.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resource Files\sampleModels\BarramundiFish\glTF-pbrSpecularGlossiness\BarramundiFish.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resource Files\sampleModels\BoomBox\glTF\BoomBox.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resource Files\sampleModels\BoomBox\glTF-Draco\BoomBox.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resource Files\sampleModels\BoomBox\glTF-pbrSpecularGlossiness\BoomBox.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resource Files\sampleModels\BoomBoxWithAxes\glTF\BoomBoxWithAxes.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resource Files\sampleModels\Box\glTF\Box0.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resource Files\sampleModels\Box\glTF-Draco\Box.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resource Files\sampleModels\BoxAnimated\glTF\BoxAnimated0.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resource Files\sampleModels\BoxInterleaved\glTF\BoxInterleaved.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resource Files\sampleModels\BoxTextured\glTF\BoxTextured0.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resource Files\sampleModels\BoxTexturedNonPowerOfTwo\glTF\BoxTextured0.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resource Files\sampleModels\BoxVertexColors\glTF\buffer.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resource Files\sampleModels\BrainStem\glTF\BrainStem0.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resource Files\sampleModels\BrainStem\glTF-Draco\BrainStem0.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resource Files\sampleModels\Buggy\glTF\Buggy0.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resource Files\sampleModels\Buggy\glTF-Draco\Buggy.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resource Files\sampleModels\Cameras\glTF\simpleSquare.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resource Files\sampleModels\CesiumMan\glTF\CesiumMan_data.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resource Files\sampleModels\CesiumMan\glTF-Draco\CesiumMan_data.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resource Files\sampleModels\CesiumMilkTruck\glTF\CesiumMilkTruck_data.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resource Files\sampleModels\CesiumMilkTruck\glTF-Draco\CesiumMilkTruck_data.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resource Files\sampleModels\ClearCoatTest\glTF\ClearCoatTest.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resource Files\sampleModels\Corset\glTF\Corset.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resource Files\sampleModels\Corset\glTF-Draco\Corset.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resource Files\sampleModels\Corset\glTF-pbrSpecularGlossiness\Corset.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resource Files\sampleModels\Cube\glTF\Cube.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resource Files\sampleModels\DamagedHelmet\glTF\DamagedHelmet.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resource Files\sampleModels\Duck\glTF\Duck0.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resource Files\sampleModels\Duck\glTF-Draco\Duck.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resource Files\sampleModels\Duck\glTF-Quantized\Duck.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resource Files\sampleModels\EnvironmentTest\glTF\EnvironmentTest_binary.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resource Files\sampleModels\EnvironmentTest\glTF-IBL\EnvironmentTest_binary.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resource Files\sampleModels\FlightHelmet\glTF\FlightHelmet.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resource Files\sampleModels\Fox\glTF\Fox.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resource Files\sampleModels\GearboxAssy\glTF\GearboxAssy0.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resource Files\sampleModels\GearboxAssy\glTF-Draco\GearboxAssy.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resource Files\sampleModels\InterpolationTest\glTF\interpolation.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resource Files\sampleModels\Lantern\glTF\Lantern.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resource Files\sampleModels\Lantern\glTF-Draco\Lantern.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resource Files\sampleModels\Lantern\glTF-pbrSpecularGlossiness\Lantern.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resource Files\sampleModels\Lantern\glTF-Quantized\Lantern.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resource Files\sampleModels\MaterialsVariantsShoe\glTF\MaterialsVariantsShoe.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resource Files\sampleModels\MetalRoughSpheres\glTF\MetalRoughSpheres0.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resource Files\sampleModels\MetalRoughSpheresNoTextures\glTF\MetalRoughSpheresNoTextures.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resource Files\sampleModels\MorphPrimitivesTest\glTF\MorphPrimitivesTest.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resource Files\sampleModels\MorphPrimitivesTest\glTF-Draco\MorphPrimitivesTest.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resource Files\sampleModels\MultiUVTest\glTF\MultiUVTest.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resource Files\sampleModels\NormalTangentMirrorTest\glTF\NormalTangentMirrorTest.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resource Files\sampleModels\NormalTangentTest\glTF\NormalTangentTest0.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resource Files\sampleModels\OrientationTest\glTF\OrientationTest.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resource Files\sampleModels\ReciprocatingSaw\glTF\ReciprocatingSaw0.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resource Files\sampleModels\ReciprocatingSaw\glTF-Draco\ReciprocatingSaw.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resource Files\sampleModels\RiggedFigure\glTF\RiggedFigure0.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resource Files\sampleModels\RiggedFigure\glTF-Draco\RiggedFigure0.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resource Files\sampleModels\RiggedSimple\glTF\RiggedSimple0.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resource Files\sampleModels\RiggedSimple\glTF-Draco\RiggedSimple0.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resource Files\sampleModels\SciFiHelmet\glTF\SciFiHelmet.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resource Files\sampleModels\SheenChair\glTF\SheenChair.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resource Files\sampleModels\SheenCloth\glTF\SheenCloth.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resource Files\sampleModels\SimpleMeshes\glTF\triangle.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resource Files\sampleModels\SimpleMorph\glTF\simpleMorphAnimation.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resource Files\sampleModels\SimpleMorph\glTF\simpleMorphGeometry.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resource Files\sampleModels\SimpleSkin\glTF\inverseBindMatrices.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resource Files\sampleModels\SimpleSkin\glTF\skinAnimation.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resource Files\sampleModels\SimpleSkin\glTF\skinGeometry.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resource Files\sampleModels\SimpleSkin\glTF\skinningData.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resource Files\sampleModels\SimpleSparseAccessor\glTF\SimpleSparseAccessor.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resource Files\sampleModels\SpecGlossVsMetalRough\glTF\SpecGlossVsMetalRoughLabel.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resource Files\sampleModels\SpecGlossVsMetalRough\glTF\WaterBottle.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resource Files\sampleModels\Sponza\glTF\Sponza.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resource Files\sampleModels\Suzanne\glTF\Suzanne.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resource Files\sampleModels\TextureCoordinateTest\glTF\TextureCoordinateTest.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resource Files\sampleModels\TextureSettingsTest\glTF\TextureSettingsTest0.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resource Files\sampleModels\TextureTransformMultiTest\glTF\TextureTransformMultiTest.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resource Files\sampleModels\TextureTransformTest\glTF\TextureTransformTest.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resource Files\sampleModels\ToyCar\glTF\ToyCar.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resource Files\sampleModels\TransmissionTest\glTF\TransmissionTest_binary.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resource Files\sampleModels\Triangle\glTF\simpleTriangle.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resource Files\sampleModels\TriangleWithoutIndices\glTF\triangleWithoutIndices.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resource Files\sampleModels\TwoSidedPlane\glTF\TwoSidedPlane.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resource Files\sampleModels\UnlitTest\glTF\UnlitTest.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resource Files\sampleModels\VC\glTF\VC0.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resource Files\sampleModels\VC\glTF-Draco\VC0.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resource Files\sampleModels\VertexColorTest\glTF\VertexColorTest.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resource Files\sampleModels\WaterBottle\glTF\WaterBottle.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resource Files\sampleModels\WaterBottle\glTF-Draco\WaterBottle.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resource Files\sampleModels\WaterBottle\glTF-pbrSpecularGlossiness\WaterBottle.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resource Files\sampleModels\2CylinderEngine\glTF\2CylinderEngine.gltf">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resource Files\sampleModels\2CylinderEngine\glTF\2CylinderEngine0.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resource Files\sampleModels\2CylinderEngine\README.md" />
+    <None Include="Resource Files\sampleModels\2CylinderEngine\glTF-Embedded\2CylinderEngine.gltf">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resource Files\sampleModels\2CylinderEngine\glTF-Binary\2CylinderEngine.glb">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resource Files\sampleModels\2CylinderEngine\glTF-Draco\2CylinderEngine.gltf">
+      <Filter>Resource Files</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Image Include="Resource Files\wall.jpg">
@@ -68,6 +399,9 @@
       <Filter>Resource Files</Filter>
     </Image>
     <Image Include="Resource Files\awesomeface.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resource Files\sampleModels\2CylinderEngine\screenshot\screenshot.png">
       <Filter>Resource Files</Filter>
     </Image>
   </ItemGroup>

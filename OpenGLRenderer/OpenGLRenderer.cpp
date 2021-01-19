@@ -1,7 +1,16 @@
 // OpenGLRenderer.cpp : This file contains the 'main' function. Program execution begins and ends there.
 #include "OpenGLRenderer.h"
+
+// Define these only in *one* .cc file.
+#define STBI_MSC_SECURE_CRT
+#define TINYGLTF_IMPLEMENTATION
 #define STB_IMAGE_IMPLEMENTATION
-#include "stb_image.h"
+#define STB_IMAGE_WRITE_IMPLEMENTATION
+// #define TINYGLTF_NOEXCEPTION // optional. disable exception handling.     
+#include "tiny_gltf.h"
+
+using namespace tinygltf;
+
 
 // lighting
 glm::vec3 lightPos(1.2f, 1.0f, 2.0f);
@@ -210,7 +219,7 @@ int main()
 		glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
 		//Frame timing
-		float currentFrame = glfwGetTime();
+		float currentFrame = (float) glfwGetTime();
 		deltaTime = currentFrame - lastFrame;
 		lastFrame = currentFrame;
 
@@ -309,10 +318,10 @@ void key_callback(GLFWwindow* window, int key, int scancode, int action, int mod
 
 void cursor_position_callback(GLFWwindow* window, double xpos, double ypos)
 {
-	float xoffset = xpos - lastX;
-	float yoffset = lastY - ypos;
-	lastX = xpos;
-	lastY = ypos;
+	float xoffset = (float) xpos - lastX;
+	float yoffset = lastY - (float) ypos;
+	lastX = (float) xpos;
+	lastY = (float) ypos;
 
 	camera.ProcessMouseMove(xoffset, yoffset);
 }
@@ -324,7 +333,7 @@ void mouse_button_callback(GLFWwindow* window, int button, int action, int mods)
 
 void scroll_callback(GLFWwindow* window, double xoffset, double yoffset)
 {
-	camera.ProcessWheel(yoffset);
+	camera.ProcessWheel((float)yoffset);
 }
 
 void framebuffer_size_callback(GLFWwindow* window, int width, int height)
